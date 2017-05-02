@@ -1,0 +1,49 @@
+﻿
+@{
+    ViewBag.Title = "Calc";
+}
+
+<h2>Calc</h2>
+<p>
+    <label>Nilai1</label>
+    <input type=text 
+           id="nil1" 
+           value=" " />
+</p>
+
+<p>
+    <label>Nilai2</label>
+    <input type=text
+           id="nil2"
+           value=" " />
+</p>
+
+<p>
+    <label>Hasil</label>
+    <input type="text"
+           id="nilHasil"
+           value=" " />
+</p>
+
+<p>    <button
+        type=button
+        onclick="tambah()" >
+    =
+    </button> 
+    {position:fixed;
+    left:100px;
+    top:150px;}
+<p/>
+<script>
+    var a;
+    var b;
+    var c = document.getElementById("nilHasil");
+    
+    function tambah()
+    {
+        //alert("nambah neh");
+        a = parseInt(nil1.value);
+        b = parseInt(nil2.value);
+        c.value = a + b;
+    }
+</script>
